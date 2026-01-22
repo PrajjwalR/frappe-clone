@@ -4,4 +4,4 @@ WORKDIR /home/frappe/frappe-bench
 
 EXPOSE 8000
 
-CMD ["bench", "start"]
+CMD ["sh", "-c", "bench start --port $PORT"]
