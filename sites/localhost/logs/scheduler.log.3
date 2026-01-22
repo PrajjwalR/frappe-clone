@@ -1,0 +1,1254 @@
+2026-01-22 10:28:13,296 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:29:13,701 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:30:16,312 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:31:16,707 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:32:17,248 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:33:20,064 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:34:20,581 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:35:21,137 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:36:23,900 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:37:24,433 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:38:24,836 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:39:27,602 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:40:28,125 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:41:28,564 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:42:31,377 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:43:31,836 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:44:32,358 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:45:35,011 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:46:35,594 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:47:36,054 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:48:39,647 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:49:40,117 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:50:40,606 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:51:43,200 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:52:43,658 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:53:44,053 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:54:46,983 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:55:47,451 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:56:48,039 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:57:51,525 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:58:52,084 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 10:59:52,464 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 11:00:55,042 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 11:01:55,434 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 11:02:56,055 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 11:03:58,724 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 11:04:59,140 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+
+2026-01-22 11:05:59,686 ERROR scheduler Exception in Enqueue Events for Site localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+

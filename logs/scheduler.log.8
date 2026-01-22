@@ -1,0 +1,66 @@
+2026-01-21 20:00:40,349 ERROR scheduler Exception in Enqueue Events for Site neon.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "ep-twilight-firefly-ahx7hcjm-pooler.c-3.us-east-1.aws.neon.tech" (2600:1f18:6fa0:b306:5f78:3188:6ba5:10d7), port 5432 failed: ERROR:  password authentication failed for user 'neondb'
+connection to server at "ep-twilight-firefly-ahx7hcjm-pooler.c-3.us-east-1.aws.neon.tech" (2600:1f18:6fa0:b306:5f78:3188:6ba5:10d7), port 5432 failed: ERROR:  connection is insecure (try using `sslmode=require`)
+
+2026-01-21 20:01:45,713 ERROR scheduler Exception in Enqueue Events for Site neon.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "ep-twilight-firefly-ahx7hcjm-pooler.c-3.us-east-1.aws.neon.tech" (2600:1f18:6fa0:b327:2e88:f68c:77a5:77a3), port 5432 failed: ERROR:  password authentication failed for user 'neondb'
+connection to server at "ep-twilight-firefly-ahx7hcjm-pooler.c-3.us-east-1.aws.neon.tech" (2600:1f18:6fa0:b327:2e88:f68c:77a5:77a3), port 5432 failed: ERROR:  connection is insecure (try using `sslmode=require`)
+

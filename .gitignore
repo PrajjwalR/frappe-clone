@@ -1,0 +1,7 @@
+env/
+*.pyc
+__pycache__/
+*.log
+sites/*/site_config.json
+sites/*/private/
+sites/assets/
