@@ -4,6 +4,10 @@ FROM frappe/erpnext:v15
 USER root
 RUN apt-get update && apt-get install -y postgresql-client && rm -rf /var/lib/apt/lists/*
 
+# PATCH: Comment out DROP DATABASE line to avoid cloud platform connection issues
+RUN sed -i 's/^\troot_conn.sql(f.*DROP DATABASE.*/\t# PATCHED: DROP DATABASE commented out for cloud deployment/' \
+    /home/frappe/frappe-bench/apps/frappe/frappe/database/postgres/setup_db.py
+
 WORKDIR /home/frappe/frappe-bench
 
 # Copy startup script with executable permissions
