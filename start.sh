@@ -90,12 +90,13 @@ if [ ! -f "${SITE_DIR}/site_config.json" ]; then
   echo "  This may take 2-3 minutes..."
   echo ""
   
-  # Create site with PostgreSQL using Neon credentials
+  # Create site with PostgreSQL using Fly.io credentials
+  # Don't specify --db-name to let Frappe create its own database
+  # This avoids the "cannot drop currently open database" error
   bench new-site ${SITE_NAME} \
     --db-type postgres \
     --db-host "$DB_HOST" \
     --db-port "$DB_PORT" \
-    --db-name "$DB_NAME" \
     --db-root-username "$DB_USER" \
     --db-root-password "$DB_PASSWORD" \
     --admin-password admin \
