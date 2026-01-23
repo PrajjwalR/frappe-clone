@@ -21,19 +21,27 @@ else
 fi
 echo ""
 
-# Parse database connection details
+# Parse database connection details from URL
 if [ -z "$DATABASE_URL" ]; then
     echo "❌ ERROR: DATABASE_URL environment variable is not set!"
     echo "Please add DATABASE_URL to Render environment variables"
     exit 1
 fi
 
-DB_HOST=$(echo $DATABASE_URL | sed -E 's/.*@([^:/]+).*/\1/')
+# Extract database credentials from URL
+# Format: postgresql://user:password@host:port/database?params
+DB_USER=$(echo $DATABASE_URL | sed -E 's/postgresql:\/\/([^:]+):.*/\1/')
+DB_PASSWORD=$(echo $DATABASE_URL | sed -E 's/postgresql:\/\/[^:]+:([^@]+)@.*/\1/')
+DB_HOST=$(echo $DATABASE_URL | sed -E 's/.*@([^:\/]+).*/\1/')
+DB_PORT=$(echo $DATABASE_URL | sed -E 's/.*:([0-9]+)\/.*/\1/')
 DB_NAME=$(echo $DATABASE_URL | sed -E 's/.*\/([^?]+).*/\1/')
 
 echo "📊 Database Configuration:"
+echo "  - User: $DB_USER"
 echo "  - Host: $DB_HOST"
+echo "  - Port: $DB_PORT"
 echo "  - Database: $DB_NAME"
+echo "  - SSL: Required"
 echo ""
 
 # Wait for database to be ready
@@ -41,7 +49,8 @@ echo "⏳ Waiting for database connection..."
 MAX_RETRIES=30
 RETRY_COUNT=0
 
-until pg_isready -h "$DB_HOST" -U postgres 2>/dev/null || [ $RETRY_COUNT -eq $MAX_RETRIES ]; do
+# Use proper credentials for pg_isready check
+until PGPASSWORD="$DB_PASSWORD" pg_isready -h "$DB_HOST" -p "$DB_PORT" -U "$DB_USER" -d "$DB_NAME" 2>/dev/null || [ $RETRY_COUNT -eq $MAX_RETRIES ]; do
   RETRY_COUNT=$((RETRY_COUNT+1))
   echo "  Attempt $RETRY_COUNT/$MAX_RETRIES - Database not ready, waiting..."
   sleep 2
@@ -49,7 +58,7 @@ done
 
 if [ $RETRY_COUNT -eq $MAX_RETRIES ]; then
     echo "❌ ERROR: Could not connect to database after $MAX_RETRIES attempts"
-    echo "Database host: $DB_HOST"
+    echo "Database: $DB_USER@$DB_HOST:$DB_PORT/$DB_NAME"
     exit 1
 fi
 
@@ -71,13 +80,15 @@ if [ ! -f "${SITE_DIR}/site_config.json" ]; then
   echo "  This may take 2-3 minutes..."
   echo ""
   
-  # Create site with PostgreSQL
+  # Create site with PostgreSQL using Neon credentials
   bench new-site ${SITE_NAME} \
     --db-type postgres \
     --db-host "$DB_HOST" \
+    --db-port "$DB_PORT" \
     --db-name "$DB_NAME" \
+    --db-root-username "$DB_USER" \
+    --db-root-password "$DB_PASSWORD" \
     --admin-password admin \
-    --mariadb-root-password root \
     --force 2>&1 || {
       echo "❌ ERROR: Failed to create Frappe site"
       echo "Check the logs above for details"
