@@ -19,6 +19,8 @@ echo ""
 if [ ! -d "$SITE_DIR" ]; then
   echo "📁 Creating site directory..."
   mkdir -p "$SITE_DIR"
+  mkdir -p "$SITE_DIR/logs"
+  mkdir -p "$SITE_DIR/public/files"
 fi
 
 # Create minimal site_config.json (no database, just for UI)
