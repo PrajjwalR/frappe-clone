@@ -30,11 +30,18 @@ fi
 
 # Extract database credentials from URL
 # Format: postgresql://user:password@host:port/database?params
+# Note: Neon URLs often don't include :port, defaulting to 5432
 DB_USER=$(echo $DATABASE_URL | sed -E 's/postgresql:\/\/([^:]+):.*/\1/')
 DB_PASSWORD=$(echo $DATABASE_URL | sed -E 's/postgresql:\/\/[^:]+:([^@]+)@.*/\1/')
 DB_HOST=$(echo $DATABASE_URL | sed -E 's/.*@([^:\/]+).*/\1/')
-DB_PORT=$(echo $DATABASE_URL | sed -E 's/.*:([0-9]+)\/.*/\1/')
 DB_NAME=$(echo $DATABASE_URL | sed -E 's/.*\/([^?]+).*/\1/')
+
+# Extract port if present, otherwise default to 5432
+if echo "$DATABASE_URL" | grep -qE ':[0-9]+/'; then
+    DB_PORT=$(echo $DATABASE_URL | sed -E 's/.*:([0-9]+)\/.*/\1/')
+else
+    DB_PORT="5432"
+fi
 
 echo "📊 Database Configuration:"
 echo "  - User: $DB_USER"
