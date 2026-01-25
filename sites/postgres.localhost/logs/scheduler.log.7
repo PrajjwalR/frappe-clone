@@ -1,0 +1,1287 @@
+2026-01-24 09:34:14,494 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 09:35:14,549 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 09:36:14,572 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 09:37:14,725 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 09:38:14,774 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 09:39:14,797 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 09:40:14,950 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 09:56:13,386 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:00:55,126 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:01:55,343 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:02:55,359 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:03:55,424 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:04:55,489 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:05:55,610 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:06:55,625 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:07:55,758 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:08:55,781 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:09:55,905 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:10:55,927 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:11:56,006 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:12:56,080 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:13:56,244 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:14:56,265 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:15:56,375 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:16:56,459 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:17:56,484 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:18:56,647 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:19:56,672 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:20:56,763 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:21:56,908 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:22:56,972 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:23:57,065 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:24:57,091 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:25:57,179 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:26:57,295 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:27:57,378 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:28:57,452 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:29:57,529 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-24 10:30:57,549 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+

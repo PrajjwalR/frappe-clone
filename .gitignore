@@ -5,3 +5,7 @@ __pycache__/
 sites/*/site_config.json
 sites/*/private/
 sites/assets/
+config/pids/
+*.rdb
+node_modules/
+.DS_Store
