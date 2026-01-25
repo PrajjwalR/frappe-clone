@@ -6,6 +6,7 @@ sites/*/site_config.json
 sites/*/private/
 sites/assets/
 config/pids/
+config/*.conf
 *.rdb
 node_modules/
 .DS_Store
