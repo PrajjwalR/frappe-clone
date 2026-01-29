@@ -1,4 +1,4 @@
-2026-01-21 20:41:25,123 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:06:58,816 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -28,10 +28,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 20:42:25,714 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:07:58,883 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -61,10 +61,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 20:43:26,175 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:08:58,931 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -94,10 +94,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 20:44:29,751 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:09:58,994 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -127,10 +127,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 21:01:01,229 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:10:59,130 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -160,10 +160,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 21:02:26,576 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:11:59,151 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -193,10 +193,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 21:18:32,008 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:12:59,267 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -226,10 +226,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 21:19:57,315 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:13:59,344 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -259,10 +259,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 21:36:27,725 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:14:59,361 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -292,10 +292,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 21:37:56,194 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:15:59,527 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -325,10 +325,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 21:39:23,667 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:16:59,547 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -358,10 +358,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 21:41:13,728 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:17:59,639 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -391,10 +391,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 21:42:42,245 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:18:59,716 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -424,10 +424,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 22:17:50,292 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:19:59,797 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -457,10 +457,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 22:34:32,206 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:20:59,819 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -490,10 +490,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 23:07:00,603 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:21:59,963 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -523,11 +523,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: server closed the connection unexpectedly
-	This probably means the server terminated abnormally
-	before or while processing the request.
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 23:23:31,919 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:22:59,973 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -557,10 +556,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 23:24:57,250 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:24:00,030 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -590,10 +589,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-21 23:46:53,172 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:25:00,181 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -623,10 +622,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 00:03:18,486 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:26:00,325 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -656,10 +655,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 00:19:24,034 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:27:00,386 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -689,10 +688,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 00:35:54,313 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:28:00,398 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -722,10 +721,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 00:48:02,058 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:29:00,504 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -755,10 +754,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 00:50:01,920 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:30:00,517 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -788,10 +787,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 00:51:27,198 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:31:00,644 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -821,10 +820,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 00:53:43,059 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:32:00,663 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -854,10 +853,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 01:09:31,080 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:33:00,744 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -887,10 +886,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 01:10:56,404 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:34:00,884 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -920,10 +919,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 01:12:49,391 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:35:00,902 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -953,10 +952,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 01:14:14,667 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:36:00,954 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -986,10 +985,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 01:15:39,991 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:37:01,081 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -1019,10 +1018,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 01:31:48,495 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:38:01,090 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -1052,10 +1051,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 01:33:38,591 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:39:01,150 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -1085,10 +1084,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 01:35:33,557 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:40:01,302 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -1118,9 +1117,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: could not translate host name "aws-1-ap-south-1.pooler.supabase.com" to address: nodename nor servname provided, or not known
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 01:37:23,861 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:41:01,318 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -1150,10 +1150,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 01:53:32,324 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:42:01,403 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -1183,10 +1183,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 02:09:37,670 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:43:01,465 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -1216,10 +1216,10 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (3.111.225.200), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
-2026-01-22 02:11:27,956 ERROR scheduler Exception in Enqueue Events for Site localhost
+2026-01-28 12:44:01,477 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
 Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
     if is_scheduler_inactive():
@@ -1249,6 +1249,39 @@ Traceback (most recent call last):
   File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-psycopg2.OperationalError: connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
-connection to server at "aws-1-ap-south-1.pooler.supabase.com" (13.200.110.68), port 5432 failed: FATAL:  Tenant or user not found
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2026-01-28 12:45:01,545 ERROR scheduler Exception in Enqueue Events for Site postgres.localhost
+Traceback (most recent call last):
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 836, in get_single_value
+    ).run()
+      ^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 220, in sql
+    return super().sql(modify_query(query), modify_values(values), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: MariadbConnection | PostgresConnection = self.get_connection()
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/apps/frappe/frappe/database/postgres/database.py", line 184, in get_connection
+    conn = psycopg2.connect(**conn_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prajjwalrchuahna/newOne/frappe-bench/env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
 
