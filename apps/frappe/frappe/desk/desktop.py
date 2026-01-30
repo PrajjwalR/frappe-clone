@@ -469,6 +469,8 @@ def get_workspace_sidebar_items():
 	if private_pages:
 		pages.extend(private_pages)
 
+	pages.sort(key=lambda x: (x.get("title") or x.get("name") or "").lower())
+
 	if len(pages) == 0:
 		pages = [frappe.get_doc("Workspace", "Welcome Workspace").as_dict()]
 		pages[0]["label"] = _("Welcome Workspace")
