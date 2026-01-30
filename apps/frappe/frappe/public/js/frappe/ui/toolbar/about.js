@@ -5,7 +5,7 @@ frappe.ui.misc.about = function () {
 		return;
 	}
 
-	const dialog = new frappe.ui.Dialog({ title: __("Frappe Framework") });
+	const dialog = new frappe.ui.Dialog({ title: __("HRMatrix Framework") });
 
 	$(dialog.body).html(
 		`<div>
@@ -25,13 +25,13 @@ frappe.ui.misc.about = function () {
 
 				<p>
 					<i class='fa fa-file-text fa-fw'></i>
-					${__("Frappe Blog")}:
+					${__("HRMatrix Blog")}:
 					<a href='https://frappe.io/blog' target='_blank'>https://frappe.io/blog</a>
 				</p>
 
 				<p>
 					<i class='fa fa-users fa-fw'></i>
-					${__("Frappe Forum")}:
+					${__("HRMatrix Forum")}:
 					<a href='https://discuss.frappe.io' target='_blank'>https://discuss.frappe.io</a>
 				</p>
 
